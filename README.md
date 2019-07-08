@@ -17,8 +17,15 @@ AWS Charges applicable
  
 ### Instructions:
 
+For testing:
+
 ```
 python stock-price.py
+```
+
+For scheduling in cron (8 am everyday from an EC2 instance):
+```
+0 8 * * * python /home/ec2-user/stock-price.py
 ```
 
 ### Further development:
