@@ -7,6 +7,7 @@ phone_number = ''
 sender_name = ''
 exchange_api_key = ''
 
+#Sanity Check
 if len(company_code) < 1 or len(phone_number) < 1 or len(sender_name) < 1 or len(exchange_api_key) < 1:
     print('Please set the parameters correctly')
     exit()
