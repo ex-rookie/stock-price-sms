@@ -28,5 +28,5 @@ def lambda_handler(event, context):
     shareprice = str(round(usdprice * exrate, 2))
 
     #SMS the price
-    client = boto3.client('sns','ap-southeast-2')
+    client = boto3.client('sns')
     client.publish(PhoneNumber=phone_number, Message=shareprice, MessageAttributes={'AWS.SNS.SMS.SenderID': {'DataType': 'String', 'StringValue': sender_name}})
