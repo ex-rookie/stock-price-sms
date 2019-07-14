@@ -12,7 +12,7 @@ AWS Charges applicable
  - "phone_number" in International format
  - "sender_name" as desired
  - "exchange_api_key" needs to be obtained from https://openexchangerates.org/account/app-ids (Sign Up required, 1000 calls free every month)
- - If running on Lambda, the "requests" module can be imported from botocode library, and the Environment variables can be used from Lambda(paste the contents of stock-price-lambda.md file into a new and completely blank Python2.7 Lambda function), the IAM role should have "AmazonSNSFullAccess" policy attached
+ - If running on AWS Lambda, the "requests" module can be imported from botocode library, and the Environment variables can be used from Lambda(paste the contents of stock-price-lambda.md file into a new and completely blank Python2.7 Lambda function), the IAM role should have "AmazonSNSFullAccess" policy attached
  
  
 ### Instructions:
